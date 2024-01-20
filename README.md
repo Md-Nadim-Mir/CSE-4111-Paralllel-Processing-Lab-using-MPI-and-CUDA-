@@ -53,14 +53,37 @@ Certainly! Here's a simple template for a README file for your Parallel Processi
 
 ## Lab Tasks
 
-- **Write an MPI program to multiply two matrices of size MxN and NxP**
-- **Write an MPI program to simulate a simple calculator. Perform each operation using a different process in parallel ✓**
-- **Write an MPI program to count the words in a file & sort it in descending order of frequency of words that is, the highest occurring word must come first & the least occurring word must come last**
-- **Write a nMPI program using synchronous send. The sender process sends a word to the receiver. The second process receives the word, toggles each letter of the word and sends it back to the first process. Both processes use synchronous send operations ✓**
-- **Write an MPI program to add an array of size N using two processes. Print the result in the root process. Investigate the amount of time taken by each process ✓**
-- **Write a Cuda program for matrix multiplication**
-- **Write a Cuda program to find out the maximum common subsequence**
-- **Given a paragraph & a pattern like %x%. Now write a Cuda program to find out the line number where %x% this pattern exists in the given paragraph**
+
+
+- Write a program to multiply K different matrices A of dimension MxN with matrices B
+of dimension NxP dimension matrices. Where K is the number of matrices.
+K * M * N <= 10^6; K * N * P<= 10^6; K * M * P <= 10^6;
+(a). Using MPI
+(b). Using CUDA
+Input: K, M, N, P
+Output: Time taken for multiplication
+
+- Write a program to count the words in a file and sort it in descending order of frequency
+of words i.e., highest occurring word must come first and the least occurring word must
+come last.
+(a). Using MPI
+(b). Using CUDA
+Input: No. of processes, (Text input from file)
+Output: Total time, top 10 occurrences
+
+- A phonebook is given as a file. Write a program to search for all the contacts matching a
+name.
+(a). Using MPI
+(b). Using CUDA
+Input: No. of processes, (phonebook from file)
+Output: Total time, Matching names and contact numbers
+
+- Given a paragraph and a pattern like %x%, write a program to find out the number of
+occurrences of the given pattern inside the text.
+(a). Using MPI
+(b). Using CUDA
+Input: No. of processes, (paragraph from file)
+Output: Total time, No. of occurrences of the patter
 
 ## Basic Instructions of MPI
 
